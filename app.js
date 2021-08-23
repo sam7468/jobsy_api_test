@@ -13,7 +13,7 @@ app.get('/', (req,res) => {
 const postsRoute = require('./routes/posts');
 app.use('/posts', postsRoute);
 
-mongoose.connect('mongodb+srv://testuser001:test@test@cluster0.2eq41.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true}, {useUnifiedTopology: true}, () => {
+mongoose.connect('mongodb+srv://testuser001:test@test@cluster0.2eq41.mongodb.net/jobsy_api_test?retryWrites=true&w=majority', {useNewUrlParser: true}, {useUnifiedTopology: true}, () => {
     console.log('MongoDB connected...');
 })
 
